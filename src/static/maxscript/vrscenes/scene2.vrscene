@@ -1,0 +1,2241 @@
+/////////////////////////////////////////
+// Exported by V-Ray ADV Plugins Exporter
+// V-Ray core version is 4.20.01 built at Sep 19 09:51:29 2019 a1698af
+// Exported at Tue Oct 22 14:28:42 2019
+// V-Ray Next for 4.10.01 SketchUp Pro 2019 ac12a9825a89ec35119c9c3245961da4c25d0244
+/////////////////////////////////////////
+
+SettingsPhotonMap settingsPhotonMap {
+  bounces=10;
+  max_photons=30;
+  prefilter=0;
+  prefilter_samples=10;
+  mode=0;
+  auto_search_distance=1;
+  convex_hull_estimate=0;
+  dont_delete=1;
+  auto_save=0;
+  retrace_bounces=10;
+  store_direct_light=1;
+  search_distance=20;
+  multiplier=1;
+  retrace_corners=0;
+  max_density=0;
+  file="";
+  auto_save_file="";
+}
+SettingsCameraDof settingsCameraDof {
+  on=0;
+  aperture=5;
+  center_bias=0;
+  focal_dist=200;
+  sides_on=0;
+  sides_num=5;
+  rotation=0;
+  anisotropy=0;
+  subdivs=6;
+}
+
+// Frame at time 0
+
+SettingsOutput _SettingsOutput {
+  img_width=800;
+  img_height=450;
+  img_pixelAspect=1;
+  img_file="";
+  img_dir="";
+  img_file_needFrameNumber=0;
+  img_separateAlpha=0;
+  img_noAlpha=0;
+  img_dontSaveRgbChannel=0;
+  img_saveVelocityZeroBase=0;
+  img_deepFile=0;
+  img_rawFile=0;
+  img_rawFileVFB=1;
+  anim_start=0;
+  anim_end=1;
+  anim_frame_padding=4;
+  anim_renumber_on=0;
+  anim_renumber_start=0;
+  anim_renumber_step=1;
+  anim_ren_frame_start=0;
+  frame_start=0;
+  frames_per_second=1;
+  frames=List();
+  rgn_left=0;
+  rgn_width=800;
+  rgn_top=0;
+  rgn_height=450;
+  bmp_width=800;
+  bmp_height=450;
+  r_left=0;
+  r_width=800;
+  r_top=0;
+  r_height=450;
+  frame_stamp_enabled=0;
+  frame_stamp_text="";
+  relements_separateFolders=0;
+  relements_separate_rgba=0;
+  relements_divider=".";
+  film_offset_x=0;
+  film_offset_y=0;
+}
+
+CameraPhysical _CameraPhysical {
+  type=0;
+  film_width=36;
+  focal_length=40;
+  zoom_factor=1;
+  distortion=0;
+  distortion_type=0;
+  f_number=8;
+  lens_shift=0;
+  shutter_speed=300;
+  shutter_angle=180;
+  shutter_offset=0;
+  latency=0;
+  ISO=100;
+  specify_focus=1;
+  focus_distance=200;
+  targeted=1;
+  target_distance=200;
+  dof_display_threshold=0.001;
+  exposure=1;
+  white_balance=Color(1, 1, 1);
+  vignetting=0;
+  blades_enable=0;
+  blades_num=5;
+  blades_rotation=0;
+  center_bias=0;
+  anisotropy=0;
+  use_dof=0;
+  use_moblur=0;
+  subdivs=8;
+  dont_affect_settings=0;
+  lens_file="";
+  specify_fov=1;
+  fov=0.957709;
+  horizontal_shift=0;
+  horizontal_offset=0;
+  vertical_offset=0;
+  bmpaperture_enable=0;
+  bmpaperture_resolution=512;
+  optical_vignetting=0;
+  bmpaperture_affects_exposure=1;
+}
+
+FilterLanczos _FilterLanczos {
+  size=2;
+}
+
+RenderView _RenderView {
+  transform=Transform(Matrix(Vector(0.8320297, 0.5547311, -4.163336e-17), Vector(-0.1058345, 0.1587389, 0.9816318), Vector(0.5445417, -0.8167468, 0.1907852)), Vector(240.7189788818359, -236.0691986083984, 102.2761764526367));
+  fov=0.957709;
+  focalDistance=1;
+  aperture=8;
+  lens_rotation=0;
+  frame_samples=2;
+  clipping=0;
+  clipping_near=0;
+  clipping_far=1e+18;
+  zoom=1;
+  orthographic=0;
+  orthographicWidth=1;
+  dont_affect_settings=0;
+  use_scene_offset=0;
+  mayaFocalLength=1;
+  mayaApperture=1;
+  stereo_on=0;
+  stereo_eye_distance=6.5;
+  stereo_interocular_method=0;
+  stereo_specify_focus=0;
+  stereo_focus_distance=200;
+  stereo_focus_method=0;
+  stereo_view=0;
+}
+
+SettingsCamera _SettingsCamera {
+  type=0;
+  height=180;
+  dist=2;
+  fov=6.283185;
+  auto_fit=1;
+  curve=1;
+  dont_affect_settings=0;
+  auto_corrections_mode=1;
+  auto_exposure=0;
+  auto_white_balance=0;
+  auto_exposure_compensation=0;
+}
+
+SettingsCaustics _SettingsCaustics {
+  on=0;
+  max_photons=60;
+  search_distance=5;
+  max_density=0;
+  multiplier=1;
+  mode=0;
+  file="";
+  dont_delete=1;
+  auto_save=0;
+  auto_save_file="";
+  show_calc_phase=0;
+}
+
+SettingsColorMapping _SettingsColorMapping {
+  type=6;
+  affect_background=1;
+  dark_mult=1;
+  bright_mult=1;
+  gamma=2.2;
+  subpixel_mapping=0;
+  clamp_output=0;
+  clamp_level=1;
+  adaptation_only=2;
+  linearWorkflow=0;
+  exposure=Color(1, 1, 1);
+}
+
+SettingsDMCGI _SettingsDMCGI {
+  subdivs=8;
+  depth=3;
+}
+
+SettingsDMCSampler _SettingsDMCSampler {
+  time_dependent=0;
+  adaptive_amount=0.85;
+  adaptive_threshold=0.005;
+  adaptive_min_samples=16;
+  subdivs_mult=1;
+  path_sampler_type=2;
+  div_shade_subdivs=1;
+  random_seed=0;
+  use_local_subdivs=0;
+}
+
+SettingsDefaultDisplacement _SettingsDefaultDisplacement {
+  override_on=0;
+  edgeLength=4;
+  viewDependent=1;
+  maxSubdivs=256;
+  tightBounds=1;
+  amount=1;
+  relative=1;
+}
+
+SettingsEXR _SettingsEXR {
+  compression=3;
+  bits_per_channel=16;
+  extra_attributes="";
+  auto_data_window=0;
+  write_integer_ids=0;
+  multipart=0;
+  deep_alpha_colors=0;
+}
+
+SettingsEnvironment _SettingsEnvironment {
+  bg_tex=_Environment_Sky;
+  bg_tex_mult=1;
+  gi_tex=_Environment_Sky;
+  gi_tex_mult=1;
+  reflect_tex=_Environment_Sky;
+  reflect_tex_mult=1;
+  refract_tex=_Environment_Sky;
+  refract_tex_mult=1;
+  secondary_matte_tex=_Environment_Sky;
+  secondary_matte_tex_mult=1;
+  environment_volume=List(_VolumeAerialPerspective, _EnvironmentFog);
+  num_environment_objects=0;
+  global_light_level=Color(1, 1, 1);
+  use_bg=1;
+  use_gi=1;
+  use_reflect=1;
+  use_refract=1;
+  use_secondary_matte=1;
+}
+
+SettingsGI _SettingsGI {
+  on=1;
+  refract_caustics=1;
+  reflect_caustics=0;
+  saturation=1;
+  contrast=1;
+  contrast_base=0.5;
+  primary_engine=2;
+  primary_multiplier=1;
+  secondary_engine=3;
+  secondary_multiplier=1;
+  ray_distance_on=0;
+  ray_distance=100000;
+  ao_on=0;
+  ao_amount=0.8;
+  ao_radius=8;
+  ao_subdivs=8;
+}
+
+SettingsImageSampler _SettingsImageSampler {
+  type=3;
+  min_shade_rate=6;
+  fixed_subdivs=1;
+  dmc_minSubdivs=1;
+  dmc_maxSubdivs=12;
+  dmc_threshold=0.05;
+  dmc_per_pixel_filtering=0;
+  progressive_minSubdivs=1;
+  progressive_maxSubdivs=100;
+  progressive_threshold=0.05;
+  progressive_maxTime=0;
+  progressive_bundleSize=128;
+  progressive_showMask=0;
+  progressive_progNoiseThreshold=80;
+  progressive_effectsUpdate=0;
+  render_mask_mode=0;
+}
+
+SettingsIrradianceMap _SettingsIrradianceMap {
+  min_rate=-3;
+  max_rate=-1;
+  subdivs=50;
+  interp_samples=30;
+  calc_interp_samples=15;
+  interp_frames=2;
+  color_threshold=0.4;
+  normal_threshold=0.3;
+  distance_threshold=0.3;
+  detail_enhancement=0;
+  detail_radius=60;
+  detail_subdivs_mult=0.3;
+  detail_scale=0;
+  randomize_samples=1;
+  interpolation_mode=1;
+  lookup_mode=3;
+  mode=0;
+  dont_delete=1;
+  file="";
+  show_samples=0;
+  show_calc_phase=1;
+  show_direct_light=1;
+  multiple_views=0;
+  multipass=0;
+  check_sample_visibility=0;
+  auto_save=0;
+  auto_save_file="";
+}
+
+SettingsJPEG _SettingsJPEG {
+  quality=100;
+}
+
+SettingsLightCache _SettingsLightCache {
+  subdivs=1000;
+  sample_size=0.03;
+  filter_type=1;
+  filter_samples=5;
+  filter_size=0.06;
+  prefilter=1;
+  prefilter_samples=20;
+  depth=100;
+  show_calc_phase=1;
+  store_direct_light=1;
+  world_scale=0;
+  mode=0;
+  file="";
+  dont_delete=1;
+  auto_save=0;
+  auto_save_file="";
+  num_passes=0;
+  use_for_glossy_rays=1;
+  adaptive_sampling=0;
+  premultiplied=1;
+  multiple_views=0;
+  retrace_enabled=1;
+  retrace_threshold=2;
+  retrace_leak_prevention=0.8;
+  type=1;
+}
+
+SettingsMotionBlur _SettingsMotionBlur {
+  on=0;
+  geom_samples=2;
+  low_samples=1;
+  duration=1;
+  subdivs=6;
+  bias=0.5;
+  shutter_efficiency=1;
+  interval_center=0.5;
+  camera_motion_blur=1;
+  sampling_type=0;
+}
+
+SettingsOptions _SettingsOptions {
+  geom_displacement=1;
+  geom_doHidden=0;
+  light_doLights=1;
+  light_doDefaultLights=0;
+  light_doHiddenLights=0;
+  light_doShadows=1;
+  light_onlyGI=0;
+  light_disableSelfIllumination=0;
+  gi_dontRenderImage=0;
+  mtl_reflectionRefraction=1;
+  mtl_limitDepth=0;
+  mtl_maxDepth=5;
+  mtl_doMaps=1;
+  mtl_filterMaps=1;
+  mtl_SSSEnabled=1;
+  mtl_filterMapsForSecondaryRays=0;
+  mtl_transpMaxLevels=50;
+  mtl_transpCutoff=0.001;
+  mtl_override_on=0;
+  mtl_glossy=1;
+  mtl_uninvertedNormalBump=0;
+  geom_backfaceCull=0;
+  ray_bias=0.001;
+  gi_texFilteringMultiplier=5;
+  misc_abortOnMissingAsset=0;
+  misc_transferAssets=1;
+  misc_useCachedAssets=1;
+  dr_assetsCacheLimitType=2;
+  dr_assetsCacheLimitValue=100;
+  dr_overwriteLocalCacheSettings=1;
+  ray_max_intensity_on=1;
+  ray_max_intensity=20;
+  probabilistic_lights_on=2;
+  num_probabilistic_lights=8;
+  probabilistic_vol_on=0;
+  probabilistic_vol_samples=5;
+  probabilistic_vol_gi_samples=5;
+  misc_lowThreadPriority=1;
+}
+
+SettingsPNG _SettingsPNG {
+  compression=9;
+  bits_per_channel=8;
+}
+
+SettingsRTEngine _SettingsRTEngine {
+  trace_depth=5;
+  gi_depth=3;
+  cpu_bundle_size=10;
+  cpu_samples_per_pixel=1;
+  gpu_bundle_size=128;
+  gpu_samples_per_pixel=64;
+  low_gpu_thread_priority=0;
+  coherent_tracing=0;
+  stereo_mode=0;
+  stereo_eye_distance=6.3;
+  stereo_focus=0;
+  opencl_texsize=512;
+  opencl_resizeTextures=1;
+  opencl_textureFormat=2;
+  progressive_samples_per_pixel=0;
+  undersampling=0;
+  disable_render_elements=0;
+  max_render_time=0;
+  max_sample_level=10000;
+  noise_threshold=0.05;
+  enable_mask=0;
+  max_draw_interval=150;
+  min_draw_interval=50;
+  interactive=0;
+  enable_bucket_sampler=1;
+}
+
+SettingsRaycaster _SettingsRaycaster {
+  maxLevels=80;
+  minLeafSize=0;
+  faceLevelCoef=1;
+  dynMemLimit=0;
+  optLevel=0;
+  embreeUse=1;
+  embreeUseMB=1;
+  embreeHair=1;
+  embreeLowMemory=0;
+  embreeRayPackets=0;
+}
+
+SettingsRegionsGenerator _SettingsRegionsGenerator {
+  xc=32;
+  yc=32;
+  xymeans=0;
+  seqtype=4;
+  reverse=0;
+  dynbuckets=1;
+}
+
+SettingsSGI _SettingsSGI {
+  bits_per_channel=8;
+}
+
+SettingsTGA _SettingsTGA {
+  compression=2;
+}
+
+SettingsTIFF _SettingsTIFF {
+  bits_per_channel=16;
+  interleaved=0;
+}
+
+SettingsUnitsInfo _SettingsUnitsInfo {
+  meters_scale=0.0254;
+  photometric_scale=0.00209439;
+  seconds_scale=0.0333333;
+  frames_scale=30;
+  rgb_color_space=1;
+}
+
+TexSky _Environment_Sky {
+  intensity_multiplier=1;
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  target_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  turbidity=3;
+  ozone=0.35;
+  size_multiplier=1;
+  sky_model=3;
+  horiz_illum=25000;
+  color_mode=0;
+  filter_color=Color(1, 1, 1);
+  ground_albedo=Color(0.2, 0.2, 0.2);
+  water_vapour=2;
+  invisible=0;
+  sun=_SunLight;
+  sun_dir_only=0;
+}
+
+SunLight _SunLight {
+  intensity_multiplier=1;
+  transform=Transform(Matrix(Vector(0.7443138, -0, 0.66783), Vector(-0.5154888, 0.6357607, 0.5745255), Vector(-0.4245802, -0.7718862, 0.4732055)), Vector(0, 0, 0));
+  target_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  turbidity=2.5;
+  ozone=0.35;
+  size_multiplier=1;
+  sky_model=3;
+  horiz_illum=25000;
+  color_mode=0;
+  filter_color=Color(1, 1, 1);
+  ground_albedo=Color(0.2, 0.2, 0.2);
+  blend_angle=5.739;
+  horizon_offset=0;
+  water_vapour=2;
+  invisible=0;
+  enabled=1;
+  shadows=1;
+  shadow_color=Color(0, 0, 0);
+  atmos_shadows=1;
+  shadowBias=0.01;
+  shadow_subdivs=8;
+  photon_radius=50;
+  photonSubdivs=500;
+  causticSubdivs=1000;
+  diffuseMult=1;
+  causticMult=1;
+  affectDiffuse=1;
+  affectSpecular=1;
+  diffuse_contribution=1;
+  specular_contribution=1;
+  bumped_below_surface_check=0;
+}
+
+EnvironmentFog _EnvironmentFog {
+  enabled=0;
+  color=Color(0.85, 0.85, 0.85);
+  color_mult=1;
+  emission=Color(0, 0, 0);
+  emission_mult=1;
+  distance=1000;
+  density=1;
+  opacity_mode=0;
+  subdivs=8;
+  use_height=1;
+  height=200;
+  yup=0;
+  solid_mode=0;
+  solid_threshold=0.5;
+  jitter=0;
+  shadow_opacity=1;
+  deep_output=0;
+  ior=1;
+  fade_out_mode=0;
+  fade_out_radius=0;
+  per_object_fade_out_radius=0;
+  scatter_gi=0;
+  scatter_bounces=4;
+  simplify_gi=0;
+  step_size=1;
+  max_steps=1000;
+  tex_samples=4;
+  cutoff_threshold=0.001;
+  light_mode=1;
+  lights=List();
+  use_shade_instance=0;
+  use_shade_data=1;
+  affect_background=1;
+  affect_reflections=1;
+  affect_refractions=1;
+  affect_shadows=1;
+  affect_gi=1;
+  affect_camera=1;
+}
+
+VolumeAerialPerspective _VolumeAerialPerspective {
+  sun=_SunLight;
+  enabled=0;
+  distance=6000;
+  atm_height=6000;
+  inscat_mult=1;
+  affect_env=1;
+  affect_bg=1;
+  filter_color=Color(1, 1, 1);
+}
+
+MtlSingleBRDF _Marc_Hair {
+  filter=Color(1, 1, 1);
+  brdf=_Marc_Hair_MaterialID;
+  double_sided=1;
+  allow_negative_colors=0;
+  scene_name=ListString(
+    "Marc_Hair"
+  );
+}
+
+BRDFLayered _Marc_Hair_Base {
+  brdfs=List(_Marc_Hair_Base_V_Ray_BRDF);
+  weights=List(1);
+  transparency=Color(0, 0, 0);
+  transparency_tex_mult=1;
+  additive_mode=0;
+}
+
+BRDFVRayMtl _Marc_Hair_Base_V_Ray_BRDF {
+  opacity=1;
+  opacity_mode=2;
+  diffuse=AColor(0.1878208, 0.1589609, 0.1589609, 1);
+  roughness=0;
+  self_illumination_gi=1;
+  brdf_type=4;
+  reflect=AColor(0, 0, 0, 1);
+  reflect_glossiness=1;
+  hilight_glossiness=1;
+  hilight_glossiness_lock=1;
+  gtr_gamma=2;
+  gtr_oldGamma=0;
+  fresnel=1;
+  fresnel_ior=1.6;
+  fresnel_ior_lock=1;
+  metalness=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=0;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=100;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=2;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=1;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=1;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_color_tex=AColor(1, 1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=1;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=1000;
+  option_double_sided=1;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  option_glossy_fresnel=0;
+  option_use_roughness=0;
+  use_environment_override=0;
+  environment_override=AColor(0, 0, 0, 1);
+  environment_priority=0;
+  refl_interpolation_on=0;
+  refl_imap_min_rate=-1;
+  refl_imap_max_rate=1;
+  refl_imap_color_thresh=0.25;
+  refl_imap_norm_thresh=0.4;
+  refl_imap_samples=20;
+  refr_interpolation_on=0;
+  refr_imap_min_rate=-1;
+  refr_imap_max_rate=1;
+  refr_imap_color_thresh=0.25;
+  refr_imap_norm_thresh=0.4;
+  refr_imap_samples=20;
+}
+
+BRDFBump _Marc_Hair_Bump {
+  bump_tex_color=AColor(0.5, 0.5, 0.5, 1);
+  bump_tex_mult=1;
+  bump_tex_mult_tex=1;
+  bump_shadows=0;
+  map_type=0;
+  maya_compatible=0;
+  compute_bump_for_shadows=0;
+  bump_delta_scale=1;
+  normal_map_mult=1;
+  bump_map_mult=1;
+}
+
+GeomDisplacedMesh _Marc_Hair_Displacement {
+  displacement_amount=1;
+  displacement_shift=0;
+  use_globals=0;
+  view_dep=1;
+  edge_length=4;
+  max_subdivs=256;
+  keep_continuity=0;
+  water_level=-1e+30;
+  vector_displacement=0;
+  map_channel=1;
+  static_displacement=0;
+  image_width=0;
+  cache_normals=0;
+  object_space_displacement=0;
+  use_bounds=0;
+  displace_2d=0;
+  displace_2d_multi_tile=0;
+  displace_2d_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  resolution=256;
+  precision=8;
+  tight_bounds=1;
+  filter_texture=0;
+  filter_blur=0.001;
+}
+
+MtlMaterialID _Marc_Hair_MaterialID {
+  base_mtl=_Marc_Hair_Base;
+  material_id_color=AColor(0.215827, 0.459548, 0.140416, 1);
+  material_id_number=0;
+}
+
+MtlRenderStats _Marc_Hair_RenderStats {
+  camera_visibility=1;
+  reflections_visibility=1;
+  refractions_visibility=1;
+  gi_visibility=1;
+  shadows_visibility=1;
+  shadows_receive=1;
+  visibility=1;
+}
+
+MtlSingleBRDF _Marc_Pants {
+  filter=Color(1, 1, 1);
+  brdf=_Marc_Pants_MaterialID;
+  double_sided=1;
+  allow_negative_colors=0;
+  scene_name=ListString(
+    "Marc_Pants"
+  );
+}
+
+BRDFLayered _Marc_Pants_Base {
+  brdfs=List(_Marc_Pants_Base_V_Ray_BRDF);
+  weights=List(1);
+  transparency=Color(0, 0, 0);
+  transparency_tex_mult=1;
+  additive_mode=0;
+}
+
+BRDFVRayMtl _Marc_Pants_Base_V_Ray_BRDF {
+  opacity=1;
+  opacity_mode=2;
+  diffuse=AColor(0.1412633, 0.1221388, 0.1328683, 1);
+  roughness=0;
+  self_illumination_gi=1;
+  brdf_type=4;
+  reflect=AColor(0, 0, 0, 1);
+  reflect_glossiness=1;
+  hilight_glossiness=1;
+  hilight_glossiness_lock=1;
+  gtr_gamma=2;
+  gtr_oldGamma=0;
+  fresnel=1;
+  fresnel_ior=1.6;
+  fresnel_ior_lock=1;
+  metalness=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=0;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=100;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=2;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=1;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=1;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_color_tex=AColor(1, 1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=1;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=1000;
+  option_double_sided=1;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  option_glossy_fresnel=0;
+  option_use_roughness=0;
+  use_environment_override=0;
+  environment_override=AColor(0, 0, 0, 1);
+  environment_priority=0;
+  refl_interpolation_on=0;
+  refl_imap_min_rate=-1;
+  refl_imap_max_rate=1;
+  refl_imap_color_thresh=0.25;
+  refl_imap_norm_thresh=0.4;
+  refl_imap_samples=20;
+  refr_interpolation_on=0;
+  refr_imap_min_rate=-1;
+  refr_imap_max_rate=1;
+  refr_imap_color_thresh=0.25;
+  refr_imap_norm_thresh=0.4;
+  refr_imap_samples=20;
+}
+
+BRDFBump _Marc_Pants_Bump {
+  bump_tex_color=AColor(0.5, 0.5, 0.5, 1);
+  bump_tex_mult=1;
+  bump_tex_mult_tex=1;
+  bump_shadows=0;
+  map_type=0;
+  maya_compatible=0;
+  compute_bump_for_shadows=0;
+  bump_delta_scale=1;
+  normal_map_mult=1;
+  bump_map_mult=1;
+}
+
+GeomDisplacedMesh _Marc_Pants_Displacement {
+  displacement_amount=1;
+  displacement_shift=0;
+  use_globals=0;
+  view_dep=1;
+  edge_length=4;
+  max_subdivs=256;
+  keep_continuity=0;
+  water_level=-1e+30;
+  vector_displacement=0;
+  map_channel=1;
+  static_displacement=0;
+  image_width=0;
+  cache_normals=0;
+  object_space_displacement=0;
+  use_bounds=0;
+  displace_2d=0;
+  displace_2d_multi_tile=0;
+  displace_2d_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  resolution=256;
+  precision=8;
+  tight_bounds=1;
+  filter_texture=0;
+  filter_blur=0.001;
+}
+
+MtlMaterialID _Marc_Pants_MaterialID {
+  base_mtl=_Marc_Pants_Base;
+  material_id_color=AColor(0.484695, 0.273904, 0.706992, 1);
+  material_id_number=0;
+}
+
+MtlRenderStats _Marc_Pants_RenderStats {
+  camera_visibility=1;
+  reflections_visibility=1;
+  refractions_visibility=1;
+  gi_visibility=1;
+  shadows_visibility=1;
+  shadows_receive=1;
+  visibility=1;
+}
+
+MtlSingleBRDF _Marc_Shirt {
+  filter=Color(1, 1, 1);
+  brdf=_Marc_Shirt_MaterialID;
+  double_sided=1;
+  allow_negative_colors=0;
+  scene_name=ListString(
+    "Marc_Shirt"
+  );
+}
+
+BRDFLayered _Marc_Shirt_Base {
+  brdfs=List(_Marc_Shirt_Base_V_Ray_BRDF);
+  weights=List(1);
+  transparency=Color(0, 0, 0);
+  transparency_tex_mult=1;
+  additive_mode=0;
+}
+
+BRDFVRayMtl _Marc_Shirt_Base_V_Ray_BRDF {
+  opacity=1;
+  opacity_mode=2;
+  diffuse=AColor(0.1195384, 0.1589609, 0.4232678, 1);
+  roughness=0;
+  self_illumination_gi=1;
+  brdf_type=4;
+  reflect=AColor(0, 0, 0, 1);
+  reflect_glossiness=1;
+  hilight_glossiness=1;
+  hilight_glossiness_lock=1;
+  gtr_gamma=2;
+  gtr_oldGamma=0;
+  fresnel=1;
+  fresnel_ior=1.6;
+  fresnel_ior_lock=1;
+  metalness=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=0;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=100;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=2;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=1;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=1;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_color_tex=AColor(1, 1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=1;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=1000;
+  option_double_sided=1;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  option_glossy_fresnel=0;
+  option_use_roughness=0;
+  use_environment_override=0;
+  environment_override=AColor(0, 0, 0, 1);
+  environment_priority=0;
+  refl_interpolation_on=0;
+  refl_imap_min_rate=-1;
+  refl_imap_max_rate=1;
+  refl_imap_color_thresh=0.25;
+  refl_imap_norm_thresh=0.4;
+  refl_imap_samples=20;
+  refr_interpolation_on=0;
+  refr_imap_min_rate=-1;
+  refr_imap_max_rate=1;
+  refr_imap_color_thresh=0.25;
+  refr_imap_norm_thresh=0.4;
+  refr_imap_samples=20;
+}
+
+BRDFBump _Marc_Shirt_Bump {
+  bump_tex_color=AColor(0.5, 0.5, 0.5, 1);
+  bump_tex_mult=1;
+  bump_tex_mult_tex=1;
+  bump_shadows=0;
+  map_type=0;
+  maya_compatible=0;
+  compute_bump_for_shadows=0;
+  bump_delta_scale=1;
+  normal_map_mult=1;
+  bump_map_mult=1;
+}
+
+GeomDisplacedMesh _Marc_Shirt_Displacement {
+  displacement_amount=1;
+  displacement_shift=0;
+  use_globals=0;
+  view_dep=1;
+  edge_length=4;
+  max_subdivs=256;
+  keep_continuity=0;
+  water_level=-1e+30;
+  vector_displacement=0;
+  map_channel=1;
+  static_displacement=0;
+  image_width=0;
+  cache_normals=0;
+  object_space_displacement=0;
+  use_bounds=0;
+  displace_2d=0;
+  displace_2d_multi_tile=0;
+  displace_2d_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  resolution=256;
+  precision=8;
+  tight_bounds=1;
+  filter_texture=0;
+  filter_blur=0.001;
+}
+
+MtlMaterialID _Marc_Shirt_MaterialID {
+  base_mtl=_Marc_Shirt_Base;
+  material_id_color=AColor(0.920316, 0.00412, 0.706717, 1);
+  material_id_number=0;
+}
+
+MtlRenderStats _Marc_Shirt_RenderStats {
+  camera_visibility=1;
+  reflections_visibility=1;
+  refractions_visibility=1;
+  gi_visibility=1;
+  shadows_visibility=1;
+  shadows_receive=1;
+  visibility=1;
+}
+
+MtlSingleBRDF _Marc_Shirt2 {
+  filter=Color(1, 1, 1);
+  brdf=_Marc_Shirt2_MaterialID;
+  double_sided=1;
+  allow_negative_colors=0;
+  scene_name=ListString(
+    "Marc_Shirt2"
+  );
+}
+
+BRDFLayered _Marc_Shirt2_Base {
+  brdfs=List(_Marc_Shirt2_Base_V_Ray_BRDF);
+  weights=List(1);
+  transparency=Color(0, 0, 0);
+  transparency_tex_mult=1;
+  additive_mode=0;
+}
+
+BRDFVRayMtl _Marc_Shirt2_Base_V_Ray_BRDF {
+  opacity=1;
+  opacity_mode=2;
+  diffuse=AColor(0.3662527, 0.4125427, 0.6514057, 1);
+  roughness=0;
+  self_illumination_gi=1;
+  brdf_type=4;
+  reflect=AColor(0, 0, 0, 1);
+  reflect_glossiness=1;
+  hilight_glossiness=1;
+  hilight_glossiness_lock=1;
+  gtr_gamma=2;
+  gtr_oldGamma=0;
+  fresnel=1;
+  fresnel_ior=1.6;
+  fresnel_ior_lock=1;
+  metalness=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=0;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=100;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=2;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=1;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=1;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_color_tex=AColor(1, 1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=1;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=1000;
+  option_double_sided=1;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  option_glossy_fresnel=0;
+  option_use_roughness=0;
+  use_environment_override=0;
+  environment_override=AColor(0, 0, 0, 1);
+  environment_priority=0;
+  refl_interpolation_on=0;
+  refl_imap_min_rate=-1;
+  refl_imap_max_rate=1;
+  refl_imap_color_thresh=0.25;
+  refl_imap_norm_thresh=0.4;
+  refl_imap_samples=20;
+  refr_interpolation_on=0;
+  refr_imap_min_rate=-1;
+  refr_imap_max_rate=1;
+  refr_imap_color_thresh=0.25;
+  refr_imap_norm_thresh=0.4;
+  refr_imap_samples=20;
+}
+
+BRDFBump _Marc_Shirt2_Bump {
+  bump_tex_color=AColor(0.5, 0.5, 0.5, 1);
+  bump_tex_mult=1;
+  bump_tex_mult_tex=1;
+  bump_shadows=0;
+  map_type=0;
+  maya_compatible=0;
+  compute_bump_for_shadows=0;
+  bump_delta_scale=1;
+  normal_map_mult=1;
+  bump_map_mult=1;
+}
+
+GeomDisplacedMesh _Marc_Shirt2_Displacement {
+  displacement_amount=1;
+  displacement_shift=0;
+  use_globals=0;
+  view_dep=1;
+  edge_length=4;
+  max_subdivs=256;
+  keep_continuity=0;
+  water_level=-1e+30;
+  vector_displacement=0;
+  map_channel=1;
+  static_displacement=0;
+  image_width=0;
+  cache_normals=0;
+  object_space_displacement=0;
+  use_bounds=0;
+  displace_2d=0;
+  displace_2d_multi_tile=0;
+  displace_2d_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  resolution=256;
+  precision=8;
+  tight_bounds=1;
+  filter_texture=0;
+  filter_blur=0.001;
+}
+
+MtlMaterialID _Marc_Shirt2_MaterialID {
+  base_mtl=_Marc_Shirt2_Base;
+  material_id_color=AColor(0.825953, 0.239204, 0.453108, 1);
+  material_id_number=0;
+}
+
+MtlRenderStats _Marc_Shirt2_RenderStats {
+  camera_visibility=1;
+  reflections_visibility=1;
+  refractions_visibility=1;
+  gi_visibility=1;
+  shadows_visibility=1;
+  shadows_receive=1;
+  visibility=1;
+}
+
+MtlSingleBRDF _Marc_Shoes {
+  filter=Color(1, 1, 1);
+  brdf=_Marc_Shoes_MaterialID;
+  double_sided=1;
+  allow_negative_colors=0;
+  scene_name=ListString(
+    "Marc_Shoes"
+  );
+}
+
+BRDFLayered _Marc_Shoes_Base {
+  brdfs=List(_Marc_Shoes_Base_V_Ray_BRDF);
+  weights=List(1);
+  transparency=Color(0, 0, 0);
+  transparency_tex_mult=1;
+  additive_mode=0;
+}
+
+BRDFVRayMtl _Marc_Shoes_Base_V_Ray_BRDF {
+  opacity=1;
+  opacity_mode=2;
+  diffuse=AColor(0.1274377, 0.1328683, 0.1878208, 1);
+  roughness=0;
+  self_illumination_gi=1;
+  brdf_type=4;
+  reflect=AColor(0, 0, 0, 1);
+  reflect_glossiness=1;
+  hilight_glossiness=1;
+  hilight_glossiness_lock=1;
+  gtr_gamma=2;
+  gtr_oldGamma=0;
+  fresnel=1;
+  fresnel_ior=1.6;
+  fresnel_ior_lock=1;
+  metalness=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=0;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=100;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=2;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=1;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=1;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_color_tex=AColor(1, 1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=1;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=1000;
+  option_double_sided=1;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  option_glossy_fresnel=0;
+  option_use_roughness=0;
+  use_environment_override=0;
+  environment_override=AColor(0, 0, 0, 1);
+  environment_priority=0;
+  refl_interpolation_on=0;
+  refl_imap_min_rate=-1;
+  refl_imap_max_rate=1;
+  refl_imap_color_thresh=0.25;
+  refl_imap_norm_thresh=0.4;
+  refl_imap_samples=20;
+  refr_interpolation_on=0;
+  refr_imap_min_rate=-1;
+  refr_imap_max_rate=1;
+  refr_imap_color_thresh=0.25;
+  refr_imap_norm_thresh=0.4;
+  refr_imap_samples=20;
+}
+
+BRDFBump _Marc_Shoes_Bump {
+  bump_tex_color=AColor(0.5, 0.5, 0.5, 1);
+  bump_tex_mult=1;
+  bump_tex_mult_tex=1;
+  bump_shadows=0;
+  map_type=0;
+  maya_compatible=0;
+  compute_bump_for_shadows=0;
+  bump_delta_scale=1;
+  normal_map_mult=1;
+  bump_map_mult=1;
+}
+
+GeomDisplacedMesh _Marc_Shoes_Displacement {
+  displacement_amount=1;
+  displacement_shift=0;
+  use_globals=0;
+  view_dep=1;
+  edge_length=4;
+  max_subdivs=256;
+  keep_continuity=0;
+  water_level=-1e+30;
+  vector_displacement=0;
+  map_channel=1;
+  static_displacement=0;
+  image_width=0;
+  cache_normals=0;
+  object_space_displacement=0;
+  use_bounds=0;
+  displace_2d=0;
+  displace_2d_multi_tile=0;
+  displace_2d_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  resolution=256;
+  precision=8;
+  tight_bounds=1;
+  filter_texture=0;
+  filter_blur=0.001;
+}
+
+MtlMaterialID _Marc_Shoes_MaterialID {
+  base_mtl=_Marc_Shoes_Base;
+  material_id_color=AColor(0.970641, 0.134434, 0.658956, 1);
+  material_id_number=0;
+}
+
+MtlRenderStats _Marc_Shoes_RenderStats {
+  camera_visibility=1;
+  reflections_visibility=1;
+  refractions_visibility=1;
+  gi_visibility=1;
+  shadows_visibility=1;
+  shadows_receive=1;
+  visibility=1;
+}
+
+MtlSingleBRDF _Marc_Shoes2 {
+  filter=Color(1, 1, 1);
+  brdf=_Marc_Shoes2_MaterialID;
+  double_sided=1;
+  allow_negative_colors=0;
+  scene_name=ListString(
+    "Marc_Shoes2"
+  );
+}
+
+BRDFLayered _Marc_Shoes2_Base {
+  brdfs=List(_Marc_Shoes2_Base_V_Ray_BRDF);
+  weights=List(1);
+  transparency=Color(0, 0, 0);
+  transparency_tex_mult=1;
+  additive_mode=0;
+}
+
+BRDFVRayMtl _Marc_Shoes2_Base_V_Ray_BRDF {
+  opacity=1;
+  opacity_mode=2;
+  diffuse=AColor(0.05780543, 0.08021983, 0.1412633, 1);
+  roughness=0;
+  self_illumination_gi=1;
+  brdf_type=4;
+  reflect=AColor(0, 0, 0, 1);
+  reflect_glossiness=1;
+  hilight_glossiness=1;
+  hilight_glossiness_lock=1;
+  gtr_gamma=2;
+  gtr_oldGamma=0;
+  fresnel=1;
+  fresnel_ior=1.6;
+  fresnel_ior_lock=1;
+  metalness=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=0;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=100;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=2;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=1;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=1;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_color_tex=AColor(1, 1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=1;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=1000;
+  option_double_sided=1;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  option_glossy_fresnel=0;
+  option_use_roughness=0;
+  use_environment_override=0;
+  environment_override=AColor(0, 0, 0, 1);
+  environment_priority=0;
+  refl_interpolation_on=0;
+  refl_imap_min_rate=-1;
+  refl_imap_max_rate=1;
+  refl_imap_color_thresh=0.25;
+  refl_imap_norm_thresh=0.4;
+  refl_imap_samples=20;
+  refr_interpolation_on=0;
+  refr_imap_min_rate=-1;
+  refr_imap_max_rate=1;
+  refr_imap_color_thresh=0.25;
+  refr_imap_norm_thresh=0.4;
+  refr_imap_samples=20;
+}
+
+BRDFBump _Marc_Shoes2_Bump {
+  bump_tex_color=AColor(0.5, 0.5, 0.5, 1);
+  bump_tex_mult=1;
+  bump_tex_mult_tex=1;
+  bump_shadows=0;
+  map_type=0;
+  maya_compatible=0;
+  compute_bump_for_shadows=0;
+  bump_delta_scale=1;
+  normal_map_mult=1;
+  bump_map_mult=1;
+}
+
+GeomDisplacedMesh _Marc_Shoes2_Displacement {
+  displacement_amount=1;
+  displacement_shift=0;
+  use_globals=0;
+  view_dep=1;
+  edge_length=4;
+  max_subdivs=256;
+  keep_continuity=0;
+  water_level=-1e+30;
+  vector_displacement=0;
+  map_channel=1;
+  static_displacement=0;
+  image_width=0;
+  cache_normals=0;
+  object_space_displacement=0;
+  use_bounds=0;
+  displace_2d=0;
+  displace_2d_multi_tile=0;
+  displace_2d_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  resolution=256;
+  precision=8;
+  tight_bounds=1;
+  filter_texture=0;
+  filter_blur=0.001;
+}
+
+MtlMaterialID _Marc_Shoes2_MaterialID {
+  base_mtl=_Marc_Shoes2_Base;
+  material_id_color=AColor(0.209754, 0.0608234, 0.56679, 1);
+  material_id_number=0;
+}
+
+MtlRenderStats _Marc_Shoes2_RenderStats {
+  camera_visibility=1;
+  reflections_visibility=1;
+  refractions_visibility=1;
+  gi_visibility=1;
+  shadows_visibility=1;
+  shadows_receive=1;
+  visibility=1;
+}
+
+MtlSingleBRDF _Marc_Shoes3 {
+  filter=Color(1, 1, 1);
+  brdf=_Marc_Shoes3_MaterialID;
+  double_sided=1;
+  allow_negative_colors=0;
+  scene_name=ListString(
+    "Marc_Shoes3"
+  );
+}
+
+BRDFLayered _Marc_Shoes3_Base {
+  brdfs=List(_Marc_Shoes3_Base_V_Ray_BRDF);
+  weights=List(1);
+  transparency=Color(0, 0, 0);
+  transparency_tex_mult=1;
+  additive_mode=0;
+}
+
+BRDFVRayMtl _Marc_Shoes3_Base_V_Ray_BRDF {
+  opacity=1;
+  opacity_mode=2;
+  diffuse=AColor(0.3419144, 0.6724432, 0.2831488, 1);
+  roughness=0;
+  self_illumination_gi=1;
+  brdf_type=4;
+  reflect=AColor(0, 0, 0, 1);
+  reflect_glossiness=1;
+  hilight_glossiness=1;
+  hilight_glossiness_lock=1;
+  gtr_gamma=2;
+  gtr_oldGamma=0;
+  fresnel=1;
+  fresnel_ior=1.6;
+  fresnel_ior_lock=1;
+  metalness=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=0;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=100;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=2;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=1;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=1;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_color_tex=AColor(1, 1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=1;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=1000;
+  option_double_sided=1;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  option_glossy_fresnel=0;
+  option_use_roughness=0;
+  use_environment_override=0;
+  environment_override=AColor(0, 0, 0, 1);
+  environment_priority=0;
+  refl_interpolation_on=0;
+  refl_imap_min_rate=-1;
+  refl_imap_max_rate=1;
+  refl_imap_color_thresh=0.25;
+  refl_imap_norm_thresh=0.4;
+  refl_imap_samples=20;
+  refr_interpolation_on=0;
+  refr_imap_min_rate=-1;
+  refr_imap_max_rate=1;
+  refr_imap_color_thresh=0.25;
+  refr_imap_norm_thresh=0.4;
+  refr_imap_samples=20;
+}
+
+BRDFBump _Marc_Shoes3_Bump {
+  bump_tex_color=AColor(0.5, 0.5, 0.5, 1);
+  bump_tex_mult=1;
+  bump_tex_mult_tex=1;
+  bump_shadows=0;
+  map_type=0;
+  maya_compatible=0;
+  compute_bump_for_shadows=0;
+  bump_delta_scale=1;
+  normal_map_mult=1;
+  bump_map_mult=1;
+}
+
+GeomDisplacedMesh _Marc_Shoes3_Displacement {
+  displacement_amount=1;
+  displacement_shift=0;
+  use_globals=0;
+  view_dep=1;
+  edge_length=4;
+  max_subdivs=256;
+  keep_continuity=0;
+  water_level=-1e+30;
+  vector_displacement=0;
+  map_channel=1;
+  static_displacement=0;
+  image_width=0;
+  cache_normals=0;
+  object_space_displacement=0;
+  use_bounds=0;
+  displace_2d=0;
+  displace_2d_multi_tile=0;
+  displace_2d_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  resolution=256;
+  precision=8;
+  tight_bounds=1;
+  filter_texture=0;
+  filter_blur=0.001;
+}
+
+MtlMaterialID _Marc_Shoes3_MaterialID {
+  base_mtl=_Marc_Shoes3_Base;
+  material_id_color=AColor(0.398572, 0.292673, 0.466811, 1);
+  material_id_number=0;
+}
+
+MtlRenderStats _Marc_Shoes3_RenderStats {
+  camera_visibility=1;
+  reflections_visibility=1;
+  refractions_visibility=1;
+  gi_visibility=1;
+  shadows_visibility=1;
+  shadows_receive=1;
+  visibility=1;
+}
+
+MtlSingleBRDF _Marc_Shoes4 {
+  filter=Color(1, 1, 1);
+  brdf=_Marc_Shoes4_MaterialID;
+  double_sided=1;
+  allow_negative_colors=0;
+  scene_name=ListString(
+    "Marc_Shoes4"
+  );
+}
+
+BRDFLayered _Marc_Shoes4_Base {
+  brdfs=List(_Marc_Shoes4_Base_V_Ray_BRDF);
+  weights=List(1);
+  transparency=Color(0, 0, 0);
+  transparency_tex_mult=1;
+  additive_mode=0;
+}
+
+BRDFVRayMtl _Marc_Shoes4_Base_V_Ray_BRDF {
+  opacity=1;
+  opacity_mode=2;
+  diffuse=AColor(0.6038274, 0.5711249, 0.5840785, 1);
+  roughness=0;
+  self_illumination_gi=1;
+  brdf_type=4;
+  reflect=AColor(0, 0, 0, 1);
+  reflect_glossiness=1;
+  hilight_glossiness=1;
+  hilight_glossiness_lock=1;
+  gtr_gamma=2;
+  gtr_oldGamma=0;
+  fresnel=1;
+  fresnel_ior=1.6;
+  fresnel_ior_lock=1;
+  metalness=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=0;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=100;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=2;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=1;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=1;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_color_tex=AColor(1, 1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=1;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=1000;
+  option_double_sided=1;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  option_glossy_fresnel=0;
+  option_use_roughness=0;
+  use_environment_override=0;
+  environment_override=AColor(0, 0, 0, 1);
+  environment_priority=0;
+  refl_interpolation_on=0;
+  refl_imap_min_rate=-1;
+  refl_imap_max_rate=1;
+  refl_imap_color_thresh=0.25;
+  refl_imap_norm_thresh=0.4;
+  refl_imap_samples=20;
+  refr_interpolation_on=0;
+  refr_imap_min_rate=-1;
+  refr_imap_max_rate=1;
+  refr_imap_color_thresh=0.25;
+  refr_imap_norm_thresh=0.4;
+  refr_imap_samples=20;
+}
+
+BRDFBump _Marc_Shoes4_Bump {
+  bump_tex_color=AColor(0.5, 0.5, 0.5, 1);
+  bump_tex_mult=1;
+  bump_tex_mult_tex=1;
+  bump_shadows=0;
+  map_type=0;
+  maya_compatible=0;
+  compute_bump_for_shadows=0;
+  bump_delta_scale=1;
+  normal_map_mult=1;
+  bump_map_mult=1;
+}
+
+GeomDisplacedMesh _Marc_Shoes4_Displacement {
+  displacement_amount=1;
+  displacement_shift=0;
+  use_globals=0;
+  view_dep=1;
+  edge_length=4;
+  max_subdivs=256;
+  keep_continuity=0;
+  water_level=-1e+30;
+  vector_displacement=0;
+  map_channel=1;
+  static_displacement=0;
+  image_width=0;
+  cache_normals=0;
+  object_space_displacement=0;
+  use_bounds=0;
+  displace_2d=0;
+  displace_2d_multi_tile=0;
+  displace_2d_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  resolution=256;
+  precision=8;
+  tight_bounds=1;
+  filter_texture=0;
+  filter_blur=0.001;
+}
+
+MtlMaterialID _Marc_Shoes4_MaterialID {
+  base_mtl=_Marc_Shoes4_Base;
+  material_id_color=AColor(0.00579852, 0.4785, 0.673635, 1);
+  material_id_number=0;
+}
+
+MtlRenderStats _Marc_Shoes4_RenderStats {
+  camera_visibility=1;
+  reflections_visibility=1;
+  refractions_visibility=1;
+  gi_visibility=1;
+  shadows_visibility=1;
+  shadows_receive=1;
+  visibility=1;
+}
+
+MtlSingleBRDF _Marc_Skin {
+  filter=Color(1, 1, 1);
+  brdf=_Marc_Skin_MaterialID;
+  double_sided=1;
+  allow_negative_colors=0;
+  scene_name=ListString(
+    "Marc_Skin"
+  );
+}
+
+BRDFLayered _Marc_Skin_Base {
+  brdfs=List(_Marc_Skin_Base_V_Ray_BRDF);
+  weights=List(1);
+  transparency=Color(0, 0, 0);
+  transparency_tex_mult=1;
+  additive_mode=0;
+}
+
+BRDFVRayMtl _Marc_Skin_Base_V_Ray_BRDF {
+  opacity=1;
+  opacity_mode=2;
+  diffuse=AColor(0.6444798, 0.4793202, 0.3915726, 1);
+  roughness=0;
+  self_illumination_gi=1;
+  brdf_type=4;
+  reflect=AColor(0, 0, 0, 1);
+  reflect_glossiness=1;
+  hilight_glossiness=1;
+  hilight_glossiness_lock=1;
+  gtr_gamma=2;
+  gtr_oldGamma=0;
+  fresnel=1;
+  fresnel_ior=1.6;
+  fresnel_ior_lock=1;
+  metalness=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=0;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=100;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=2;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=1;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=1;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_color_tex=AColor(1, 1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=1;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=1000;
+  option_double_sided=1;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  option_glossy_fresnel=0;
+  option_use_roughness=0;
+  use_environment_override=0;
+  environment_override=AColor(0, 0, 0, 1);
+  environment_priority=0;
+  refl_interpolation_on=0;
+  refl_imap_min_rate=-1;
+  refl_imap_max_rate=1;
+  refl_imap_color_thresh=0.25;
+  refl_imap_norm_thresh=0.4;
+  refl_imap_samples=20;
+  refr_interpolation_on=0;
+  refr_imap_min_rate=-1;
+  refr_imap_max_rate=1;
+  refr_imap_color_thresh=0.25;
+  refr_imap_norm_thresh=0.4;
+  refr_imap_samples=20;
+}
+
+BRDFBump _Marc_Skin_Bump {
+  bump_tex_color=AColor(0.5, 0.5, 0.5, 1);
+  bump_tex_mult=1;
+  bump_tex_mult_tex=1;
+  bump_shadows=0;
+  map_type=0;
+  maya_compatible=0;
+  compute_bump_for_shadows=0;
+  bump_delta_scale=1;
+  normal_map_mult=1;
+  bump_map_mult=1;
+}
+
+GeomDisplacedMesh _Marc_Skin_Displacement {
+  displacement_amount=1;
+  displacement_shift=0;
+  use_globals=0;
+  view_dep=1;
+  edge_length=4;
+  max_subdivs=256;
+  keep_continuity=0;
+  water_level=-1e+30;
+  vector_displacement=0;
+  map_channel=1;
+  static_displacement=0;
+  image_width=0;
+  cache_normals=0;
+  object_space_displacement=0;
+  use_bounds=0;
+  displace_2d=0;
+  displace_2d_multi_tile=0;
+  displace_2d_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  resolution=256;
+  precision=8;
+  tight_bounds=1;
+  filter_texture=0;
+  filter_blur=0.001;
+}
+
+MtlMaterialID _Marc_Skin_MaterialID {
+  base_mtl=_Marc_Skin_Base;
+  material_id_color=AColor(0.397778, 0.422163, 0.824274, 1);
+  material_id_number=0;
+}
+
+MtlRenderStats _Marc_Skin_RenderStats {
+  camera_visibility=1;
+  reflections_visibility=1;
+  refractions_visibility=1;
+  gi_visibility=1;
+  shadows_visibility=1;
+  shadows_receive=1;
+  visibility=1;
+}
+
+MtlSingleBRDF _Marc_Wrist {
+  filter=Color(1, 1, 1);
+  brdf=_Marc_Wrist_MaterialID;
+  double_sided=1;
+  allow_negative_colors=0;
+  scene_name=ListString(
+    "Marc_Wrist"
+  );
+}
+
+BRDFLayered _Marc_Wrist_Base {
+  brdfs=List(_Marc_Wrist_Base_V_Ray_BRDF);
+  weights=List(1);
+  transparency=Color(0, 0, 0);
+  transparency_tex_mult=1;
+  additive_mode=0;
+}
+
+BRDFVRayMtl _Marc_Wrist_Base_V_Ray_BRDF {
+  opacity=1;
+  opacity_mode=2;
+  diffuse=AColor(0.5028866, 0.07818743, 0.04666508, 1);
+  roughness=0;
+  self_illumination_gi=1;
+  brdf_type=4;
+  reflect=AColor(0, 0, 0, 1);
+  reflect_glossiness=1;
+  hilight_glossiness=1;
+  hilight_glossiness_lock=1;
+  gtr_gamma=2;
+  gtr_oldGamma=0;
+  fresnel=1;
+  fresnel_ior=1.6;
+  fresnel_ior_lock=1;
+  metalness=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=0;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=100;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=2;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=1;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=1;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_color_tex=AColor(1, 1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=1;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=1000;
+  option_double_sided=1;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  option_glossy_fresnel=0;
+  option_use_roughness=0;
+  use_environment_override=0;
+  environment_override=AColor(0, 0, 0, 1);
+  environment_priority=0;
+  refl_interpolation_on=0;
+  refl_imap_min_rate=-1;
+  refl_imap_max_rate=1;
+  refl_imap_color_thresh=0.25;
+  refl_imap_norm_thresh=0.4;
+  refl_imap_samples=20;
+  refr_interpolation_on=0;
+  refr_imap_min_rate=-1;
+  refr_imap_max_rate=1;
+  refr_imap_color_thresh=0.25;
+  refr_imap_norm_thresh=0.4;
+  refr_imap_samples=20;
+}
+
+BRDFBump _Marc_Wrist_Bump {
+  bump_tex_color=AColor(0.5, 0.5, 0.5, 1);
+  bump_tex_mult=1;
+  bump_tex_mult_tex=1;
+  bump_shadows=0;
+  map_type=0;
+  maya_compatible=0;
+  compute_bump_for_shadows=0;
+  bump_delta_scale=1;
+  normal_map_mult=1;
+  bump_map_mult=1;
+}
+
+GeomDisplacedMesh _Marc_Wrist_Displacement {
+  displacement_amount=1;
+  displacement_shift=0;
+  use_globals=0;
+  view_dep=1;
+  edge_length=4;
+  max_subdivs=256;
+  keep_continuity=0;
+  water_level=-1e+30;
+  vector_displacement=0;
+  map_channel=1;
+  static_displacement=0;
+  image_width=0;
+  cache_normals=0;
+  object_space_displacement=0;
+  use_bounds=0;
+  displace_2d=0;
+  displace_2d_multi_tile=0;
+  displace_2d_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  resolution=256;
+  precision=8;
+  tight_bounds=1;
+  filter_texture=0;
+  filter_blur=0.001;
+}
+
+MtlMaterialID _Marc_Wrist_MaterialID {
+  base_mtl=_Marc_Wrist_Base;
+  material_id_color=AColor(0.116947, 0.681112, 0.14246, 1);
+  material_id_number=0;
+}
+
+MtlRenderStats _Marc_Wrist_RenderStats {
+  camera_visibility=1;
+  reflections_visibility=1;
+  refractions_visibility=1;
+  gi_visibility=1;
+  shadows_visibility=1;
+  shadows_receive=1;
+  visibility=1;
+}
+
+RenderChannelDenoiser _RenderChannelDenoiser {
+  enabled=0;
+  name="Denoiser";
+  engine=0;
+  mode=2;
+  type=0;
+  preset=1;
+  strength=1;
+  radius=10;
+  use_gpu=1;
+  progressive_update=0;
+  generate_render_elements=1;
+}
+
+BRDFVRayMtl _Sketchup_DefaultFront_Diffuse {
+  diffuse=AColor(1, 1, 1, 1);
+}
+
+MtlSingleBRDF _Sketchup_DefaultFront {
+  brdf=_Sketchup_DefaultFront_Diffuse;
+}
+
+BRDFVRayMtl _Sketchup_DefaultBack_Diffuse {
+  diffuse=AColor(0.3712378, 0.4452012, 0.496933, 1);
+}
+
+MtlSingleBRDF _Sketchup_DefaultBack {
+  brdf=_Sketchup_DefaultBack_Diffuse;
+}
+
+Mtl2Sided _Sketchup_Default {
+  front=_Sketchup_DefaultFront;
+  back=_Sketchup_DefaultBack;
+}
+
+GeomStaticMesh c7a1859a_04b4_49a6_a4c0_9bafcc35d6bb {
+  vertices=ListVectorHex("ZIPC2001000052000000eAFtzsENgDAQA0HK4g00RG1UQw8UAfsY6R5EOtm3caxc97Ff3yw/B6dF+HN9Njvfni/T8Hjq6LGnerydd/zMYPLp7OVx/5m8Dnz2lYm/5txH3Q==");
+  faces=ListIntHex("ZIPC900000003D000000eAEtx8cJwAAAw0Cn99723zQy+HEISVKBMiWqUKNBm/o79Bgwpv4JMxasqX/DjgNn6r9w48Gb+j/8TOABkw==");
+  normals=ListVectorHex("ZIPC200100003D000000eAFjYICBhv0wFgMDXnYDUB0QN9hDaGLYYPNg+kD24GHjtRuoFQSQ1cDtB0tA3YWHDXY3SB4ICLMB7uQh6Q==");
+  faceNormals=ListIntHex("ZIPC900000003D000000eAEtx8cJwAAAw0Cn99723zQy+HEISVKBMiWqUKNBm/o79Bgwpv4JMxasqX/DjgNn6r9w48Gb+j/8TOABkw==");
+  map_channels=List(
+      List(
+          1, 
+          ListVectorHex("ZIPC200100005F000000eAF9jtEJwCAMBTNWf60u1NkcwSncoUPUF3KQIiiI8bw802cbfbZqZmVtltfwdY54KMF0/Tk0istJvfW53hs/vC0HR39R50zVcDnknDhOzoy59OTzkxmucznwD/OYOQE="), 
+          ListIntHex("ZIPC900000003D000000eAEtx8cJwAAAw0Cn99723zQy+HEISVKBMiWqUKNBm/o79Bgwpv4JMxasqX/DjgNn6r9w48Gb+j/8TOABkw==")
+        ), 
+      List(
+          2, 
+          ListVectorHex("ZIPC200100005F000000eAF9jtEJwCAMBTNWf60u1NkcwSncoUPUF3KQIiiI8bw802cbfbZqZmVtltfwdY54KMF0/Tk0istJvfW53hs/vC0HR39R50zVcDnknDhOzoy59OTzkxmucznwD/OYOQE="), 
+          ListIntHex("ZIPC900000003D000000eAEtx8cJwAAAw0Cn99723zQy+HEISVKBMiWqUKNBm/o79Bgwpv4JMxasqX/DjgNn6r9w48Gb+j/8TOABkw==")
+        )
+    );
+  edge_visibility=ListIntHex("ZIPC0800000010000000eAHblnvbzIyBgQEAD7sCaw==");
+  face_mtlIDs=ListIntHex("ZIPC300000000C000000eAFjYCANAAAAMAAB");
+  weld_threshold=1e-06;
+  dynamic_geometry=0;
+}
+
+Node _Model {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=c7a1859a_04b4_49a6_a4c0_9bafcc35d6bb;
+  material=_Sketchup_Default;
+  visible=1;
+  objectID=0;
+  scene_name=ListString(
+    "Model",
+    "scene",
+    "layer/"
+  );
+}
+
+SettingsVFB _SettingsVFB {
+  version=3;
+  bloom_weight=0.4;
+  bloom_mask_intensity=1;
+  glare_on=0;
+  glare_weight=1;
+  glare_size=30;
+  glare_type=1;
+  glare_mode=0;
+  glare_image_path="";
+  glare_obstacle_image_path="";
+  glare_diffraction_on=0;
+  glare_use_obstacle_image=0;
+  glare_cam_blades_on=1;
+  glare_cam_num_blades=6;
+  glare_cam_rotation=15;
+  glare_cam_fnumber=0.2;
+  glare_mask_intensity=1;
+  interactive=1;
+  hardware_accelerated=1;
+  display_srgb=1;
+  filter_rotation=0;
+  use_occlusion=0;
+  occlusion_symmetric=1;
+  occlusion_percent=20;
+  occlusion_rotation=0;
+  occlusion_arc=100;
+  use_grating=0;
+  grating_length=10;
+  grating_slope=0;
+  grating_strength=1;
+  grating_density=50;
+  grating_zoom=5;
+  use_scratch=0;
+  scr_pattern=0;
+  scr_symmetric=1;
+  scr_multiglare_count=1;
+  scr_seed=0;
+  scr_density=50;
+  scr_strength=1;
+  scr_slope_variance=0;
+  scr_width_variance=0;
+  scr_length=50;
+  scr_zoom=2;
+  scr_rotation=0;
+  use_dust=0;
+  dust_pattern=0;
+  dust_radius_variance=0;
+  dust_strength=1;
+  dust_density=50;
+  dust_zoom=2;
+  dust_rotation=0;
+  dust_jitter=0;
+  obst_image_zoom=1;
+  obst_image_rotation=0;
+  obst_image_strength=1;
+  cc_settings=ListIntHex("ZIPC000200009D000000eAFjZWBgcHRhOMAMpBmBGB3AxFjhEg325KltsIcbAWTgMpcJrAikFoEx1SJMwpRrsLeWBJnCCLbD8LSLH4gtvj3QAqTrTcXaByCzgXSCwZTrtsv2sIHtgtgLUsHAcPjChH1QbAek7UBiyO7CLQ9SCQSgwII5DCwAJmAB0GCPIYchgMUAbGoQhmNngfUonHYFxRg6YGQBiQAArVQvGw==");
+}
+
+
